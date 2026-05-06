@@ -39,7 +39,7 @@ status    : Always building, always learning
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,html,css&perline=6" />
+    <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,html,css,vercel&perline=6" />
   </a>
 </p>
 
@@ -47,15 +47,16 @@ status    : Always building, always learning
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=nodejs,laravel,hono,postgres,mysql&perline=6" />
+    <img src="https://skillicons.dev/icons?i=nodejs,laravel,rabbitmq,postgres,mysql&perline=6" />
   </a>
+  <img src="https://hono.dev/images/logo.png" width="48" height="48" alt="Hono" style="vertical-align: top; margin-left: 4px;" />
 </p>
 
 **DevOps & Tools**
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=docker,git,linux,vscode,github&perline=6" />
+    <img src="https://skillicons.dev/icons?i=docker,git,gitlab,githubactions,linux,vscode,github,pnpm,postman&perline=9" />
   </a>
 </p>
 
