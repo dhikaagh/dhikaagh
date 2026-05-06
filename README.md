@@ -92,9 +92,11 @@ status    : Always building, always learning
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=dhikaagh&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github)
+![GitHub Profile Summary](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=dhikaagh&theme=tokyonight)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=dhikaagh&layout=compact&theme=tokyonight&hide_border=true&langs_count=8)
+![Stats Summary](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=dhikaagh&theme=tokyonight)
+
+![Most Used Languages](https://github-profile-summary-cards.vercel.app/api/cards/most-used-languages?username=dhikaagh&theme=tokyonight)
 
 [![GitHub Streak](https://streak-stats.demolab.com?user=dhikaagh&theme=tokyonight&hide_border=true)](https://git.io/streak-stats)
 
