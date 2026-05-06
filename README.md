@@ -77,13 +77,6 @@ status    : Always building, always learning
 
 ## 🚀 Projects
 
-<div align="center">
-
-[![Pinned Repo 1](https://github-readme-stats.vercel.app/api/pin/?username=dhikaagh&repo=your-repo-1&theme=tokyonight&hide_border=true)](https://github.com/dhikaagh/your-repo-1)
-[![Pinned Repo 2](https://github-readme-stats.vercel.app/api/pin/?username=dhikaagh&repo=your-repo-2&theme=tokyonight&hide_border=true)](https://github.com/dhikaagh/your-repo-2)
-
-</div>
-
 > 💡 _Check out all my projects in [my repositories](https://github.com/dhikaagh?tab=repositories)_
 
 ---
