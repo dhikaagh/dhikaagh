@@ -4,7 +4,15 @@
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=6366F1&center=true&vCenter=true&width=500&lines=Full+Stack+Developer;Backend+%26+Frontend+Engineer;DevOps+Enthusiast;Always+learning+new+things+%F0%9F%9A%80)](https://git.io/typing-svg)
+# Hi, I'm Dhika 👋
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=6366F1&center=true&vCenter=true&width=550&lines=Full+Stack+Developer;Backend+%26+Frontend+Engineer;DevOps+Enthusiast;Always+learning+new+things+%F0%9F%9A%80)](https://git.io/typing-svg)
+
+**Fullstack developer yang suka membangun API cepat dan UI yang rapi.**
+
+<img src="https://img.shields.io/badge/Fullstack%20Developer-6366F1?style=for-the-badge&logo=nodedotjs&logoColor=white" />
+<img src="https://img.shields.io/badge/Graduate-SMK%20Negeri%201%20Cimahi-6366F1?style=for-the-badge&logo=googlescholar&logoColor=white" />
+<img src="https://img.shields.io/badge/Based%20in-Cimahi%2C%20Indonesia-6366F1?style=for-the-badge&logo=googlemaps&logoColor=white" />
 
 </div>
 
@@ -12,16 +20,11 @@
 
 ## 👨‍💻 About Me
 
-> _My name is **Dhika Fatturrahman Ghany**, a 12th-grade student at SMK Negeri 1 Cimahi, currently undergoing an internship at **PT Infinys System Indonesia** as a Backend Developer Intern._
-
-```yaml
-name      : Dhika Fatturrahman Ghany
-location  : Bandung, Indonesia 📍
-school    : SMK Negeri 1 Cimahi
-internship: PT Infinys System Indonesia — Backend Developer Intern
-focus     : Full Stack · Backend · Frontend · DevOps
-status    : Always building, always learning
-```
+- 💻 **Fullstack Developer** — membangun aplikasi dari sisi backend sampai frontend
+- 🎓 Lulusan **SMK Negeri 1 Cimahi**
+- 🌐 Fokus di **Full Stack Development** — Backend, Frontend, & DevOps
+- 🚀 Terus belajar hal baru dan membangun proyek setiap harinya
+- 📍 Berbasis di Cimahi, Indonesia
 
 ---
 
@@ -30,34 +33,26 @@ status    : Always building, always learning
 **Languages**
 
 <p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=js,ts,php,java,kotlin,cpp&perline=6" />
-  </a>
+  <img src="https://skillicons.dev/icons?i=js,ts,php,java,kotlin,cpp&perline=6" />
 </p>
 
 **Frontend**
 
 <p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,html,css,vercel&perline=6" />
-  </a>
+  <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,html,css,vercel&perline=6" />
 </p>
 
 **Backend**
 
 <p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=nodejs,laravel,rabbitmq,postgres,mysql&perline=6" />
-  </a>
+  <img src="https://skillicons.dev/icons?i=nodejs,laravel,rabbitmq,postgres,mysql&perline=6" />
   <img src="https://hono.dev/images/logo.png" width="48" height="48" alt="Hono" style="vertical-align: top; margin-left: 4px;" />
 </p>
 
 **DevOps & Tools**
 
 <p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=docker,git,gitlab,githubactions,linux,vscode,github,pnpm,postman&perline=9" />
-  </a>
+  <img src="https://skillicons.dev/icons?i=docker,git,gitlab,githubactions,linux,vscode,github,pnpm,postman&perline=9" />
 </p>
 
 ---
@@ -77,7 +72,7 @@ status    : Always building, always learning
 
 ## 🚀 Projects
 
-> 💡 _Check out all my projects in [my repositories](https://github.com/dhikaagh?tab=repositories)_
+> 💡 _Lihat semua proyekku di [repositories aku](https://github.com/dhikaagh?tab=repositories)_
 
 ---
 
@@ -85,13 +80,19 @@ status    : Always building, always learning
 
 <div align="center">
 
-![GitHub Profile Summary](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=dhikaagh&theme=tokyonight)
-
-![Stats Summary](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=dhikaagh&theme=tokyonight)
-
-![Most Used Languages](https://github-profile-summary-cards.vercel.app/api/cards/most-used-languages?username=dhikaagh&theme=tokyonight)
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=dhikaagh&theme=tokyonight" />
 
 [![GitHub Streak](https://streak-stats.demolab.com?user=dhikaagh&theme=tokyonight&hide_border=true)](https://git.io/streak-stats)
+
+</div>
+
+---
+
+## 🐍 Contribution Graph
+
+<div align="center">
+
+![Snake animation](https://raw.githubusercontent.com/dhikaagh/dhikaagh/output/github-contribution-grid-snake.svg)
 
 </div>
 
