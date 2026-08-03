@@ -80,8 +80,6 @@
 
 <div align="center">
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=dhikaagh&theme=tokyonight" />
-
 [![GitHub Streak](https://streak-stats.demolab.com?user=dhikaagh&theme=tokyonight&hide_border=true)](https://git.io/streak-stats)
 
 </div>
