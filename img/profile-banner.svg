@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320" role="img" aria-labelledby="banner-title banner-description">
   <title id="banner-title">Dhika — Full-Stack Software Engineer</title>
-  <desc id="banner-description">Web applications, CI/CD, and deployment. A conceptual build, deploy, and run pipeline traces once; it does not show live service status.</desc>
+  <desc id="banner-description">Web applications, CI/CD, and deployment. A cyan marker repeatedly travels through a conceptual build, deploy, and run pipeline. Identity text stays static; this is not live service status.</desc>
   <style>
     svg { width: 100%; height: auto; }
     text { font-family: Arial, Helvetica, sans-serif; }
@@ -8,23 +8,24 @@
     .name { font-size: 70px; font-weight: 700; letter-spacing: -2px; }
     .role { font-size: 38px; font-weight: 600; letter-spacing: -1px; }
     .focus { font-size: 19px; }
-    .trace {
-      stroke-dasharray: 220;
-      stroke-dashoffset: 0;
-      animation: draw-route 2.6s ease-in-out .4s backwards;
-    }
-    @keyframes draw-route {
-      from { stroke-dashoffset: 220; }
-      to { stroke-dashoffset: 0; }
+    .mobile-flow { display: none; }
+    .flow-marker { animation: deliver 7s ease-in-out infinite; }
+    @keyframes deliver {
+      0% { opacity: 0; transform: translateX(0); }
+      8% { opacity: 1; transform: translateX(0); }
+      36% { opacity: 1; transform: translateX(var(--midpoint, 110px)); }
+      64%, 78% { opacity: 1; transform: translateX(var(--distance, 220px)); }
+      90%, 100% { opacity: 0; transform: translateX(var(--distance, 220px)); }
     }
     @media (max-width: 600px) {
-      .pipeline, .context-label { display: none; }
+      .pipeline, .context-label, .bottom-rule { display: none; }
+      .mobile-flow { display: inline; }
       .name { font-size: 86px; }
       .role { font-size: 48px; }
       .focus { font-size: 24px; }
     }
     @media (prefers-reduced-motion: reduce) {
-      .trace { animation: none; }
+      .flow-marker { animation: none; opacity: 1; transform: none; }
     }
   </style>
   <defs>
@@ -47,13 +48,13 @@
 
   <g class="pipeline">
     <text class="utility" x="674" y="132" font-size="12" letter-spacing="1.5" fill="#94A3B8">DELIVERY PIPELINE</text>
-    <path d="M698 178H781M808 178H891" fill="none" stroke="#506680" stroke-width="1.5" marker-end="url(#arrow)" />
-    <path class="trace" d="M698 178H781M808 178H891" fill="none" stroke="#4DC9D4" stroke-width="2" />
+    <path d="M698 178H894" fill="none" stroke="#506680" stroke-width="1.5" marker-end="url(#arrow)" />
     <g fill="#152238" stroke="#506680" stroke-width="1.5">
       <circle cx="686" cy="178" r="8" />
       <circle cx="796" cy="178" r="8" />
       <circle cx="906" cy="178" r="8" />
     </g>
+    <circle class="flow-marker" cx="686" cy="178" r="5" fill="#4DC9D4" />
     <g class="utility" text-anchor="middle" font-size="16" fill="#E6EDF3">
       <text x="686" y="215">BUILD</text>
       <text x="796" y="215">DEPLOY</text>
@@ -61,5 +62,19 @@
     </g>
   </g>
 
-  <path d="M48 278H952" stroke="#26364C" />
+  <path class="bottom-rule" d="M48 278H952" stroke="#26364C" />
+  <g class="mobile-flow" style="--midpoint: 452px; --distance: 904px;">
+    <path d="M48 276H952" stroke="#506680" stroke-width="1.5" />
+    <g fill="#152238" stroke="#506680" stroke-width="1.5">
+      <circle cx="48" cy="276" r="9" />
+      <circle cx="500" cy="276" r="9" />
+      <circle cx="952" cy="276" r="9" />
+    </g>
+    <circle class="flow-marker" cx="48" cy="276" r="7" fill="#4DC9D4" />
+    <g class="utility" font-size="28" fill="#E6EDF3">
+      <text x="48" y="310">BUILD</text>
+      <text x="500" y="310" text-anchor="middle">DEPLOY</text>
+      <text x="952" y="310" text-anchor="end">RUN</text>
+    </g>
+  </g>
 </svg>

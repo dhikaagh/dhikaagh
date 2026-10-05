@@ -23,3 +23,7 @@ _Avoid_: Any public repository
 **Selected work**:
 A small set of portfolio-safe projects showing Dhika's actual contributions, technology choices, and delivery responsibilities. A technology icon or contribution count alone is not selected work.
 _Avoid_: Repository dump
+
+**GitHub stats**:
+Supplementary information about Dhika's GitHub activity and repository code, rather than a measure of professional proficiency. Language proportions describe repository contents, not skill levels.
+_Avoid_: Skill rating, engineering performance score
