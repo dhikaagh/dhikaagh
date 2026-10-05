@@ -1,107 +1,44 @@
-<div align="center">
-  <img src="img/github-header-banner.png" width="100%" alt="Header Banner"/>
-</div>
+<img src="img/profile-banner.svg" width="100%" alt="Dhika — Full-Stack Software Engineer. Web applications, CI/CD, and deployment." />
 
-<div align="center">
+# Full-Stack Software Engineer
 
-# Hi, I'm Dhika 👋
+I build full-stack web applications and APIs, with hands-on experience in CI/CD, VPS deployment, and server management.
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=6366F1&center=true&vCenter=true&width=550&lines=Full+Stack+Developer;Backend+%26+Frontend+Engineer;DevOps+Enthusiast;Always+learning+new+things+%F0%9F%9A%80)](https://git.io/typing-svg)
+Based in Cimahi, Indonesia.
 
-**Fullstack developer yang suka membangun API cepat dan UI yang rapi.**
+## Selected work
 
-<img src="https://img.shields.io/badge/Fullstack%20Developer-6366F1?style=for-the-badge&logo=nodedotjs&logoColor=white" />
-<img src="https://img.shields.io/badge/Graduate-SMK%20Negeri%201%20Cimahi-6366F1?style=for-the-badge&logo=googlescholar&logoColor=white" />
-<img src="https://img.shields.io/badge/Based%20in-Cimahi%2C%20Indonesia-6366F1?style=for-the-badge&logo=googlemaps&logoColor=white" />
+### [PaymentKit](https://github.com/dhikaagh/paymentkit)
 
-</div>
+A payment API with asynchronous processing, containerized services, and a GitHub Actions deployment workflow.
 
----
+**My contribution:** API/worker development and the GitHub Actions deployment workflow.
 
-## 👨‍💻 About Me
+- **Stack:** TypeScript · Node.js · Hono · RabbitMQ · MySQL
+- **Delivery:** Docker · GitHub Actions · VPS deployment
 
-- 💻 **Fullstack Developer** — membangun aplikasi dari sisi backend sampai frontend
-- 🎓 Lulusan **SMK Negeri 1 Cimahi**
-- 🌐 Fokus di **Full Stack Development** — Backend, Frontend, & DevOps
-- 🚀 Terus belajar hal baru dan membangun proyek setiap harinya
-- 📍 Berbasis di Cimahi, Indonesia
+### [Messaging Bridge](https://github.com/dhikaagh/Messaging-Bridge-)
 
----
+An API for integrating Telegram, email, and WhatsApp messaging.
 
-## 🛠️ Tech Stack & Tools
+**My contribution:** API routing and OpenAPI documentation.
 
-**Languages**
+**Stack:** TypeScript · Bun · Hono · Zod
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=js,ts,php,java,kotlin,cpp&perline=6" />
-</p>
+## Development & delivery
 
-**Frontend**
+- Build web applications across the frontend and backend.
+- Work with CI/CD workflows in GitHub Actions and GitLab CI/CD.
+- Deploy applications and manage server/VPS environments.
+- Use Docker for basic containerized development and deployment.
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,html,css,vercel&perline=6" />
-</p>
+## Tools
 
-**Backend**
+- **Frontend:** React · Next.js · Tailwind CSS
+- **Backend:** Node.js · Hono · Laravel
+- **Languages & data:** JavaScript · TypeScript · PHP · MySQL · PostgreSQL · RabbitMQ
+- **Delivery:** GitHub Actions · GitLab CI/CD · Docker (basics) · Linux · Git
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=nodejs,laravel,rabbitmq,postgres,mysql&perline=6" />
-  <img src="https://hono.dev/images/logo.png" width="48" height="48" alt="Hono" style="vertical-align: top; margin-left: 4px;" />
-</p>
+## Contact
 
-**DevOps & Tools**
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=docker,git,gitlab,githubactions,linux,vscode,github,pnpm,postman&perline=9" />
-</p>
-
----
-
-## 📬 Contact Me
-
-<div align="center">
-
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/dhikaa.gh/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dhika-fatturrahman-ghany-5b8b33318)
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:dhikagh12@gmail.com)
-[![Website](https://img.shields.io/badge/Website-Coming_Soon-6366F1?style=for-the-badge&logo=vercel&logoColor=white)](#)
-
-</div>
-
----
-
-## 🚀 Projects
-
-> 💡 _Lihat semua proyekku di [repositories aku](https://github.com/dhikaagh?tab=repositories)_
-
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-
-[![GitHub Streak](https://streak-stats.demolab.com?user=dhikaagh&theme=tokyonight&hide_border=true)](https://git.io/streak-stats)
-
-</div>
-
----
-
-## 🐍 Contribution Graph
-
-<div align="center">
-
-![Snake animation](https://raw.githubusercontent.com/dhikaagh/dhikaagh/output/github-contribution-grid-snake.svg)
-
-</div>
-
----
-
-<div align="center">
-
-![Thanks GIF](https://media.giphy.com/media/jpVnC65DmYeyRL4LHS/giphy.gif)
-
-**Thanks for visiting! Have a great day 🙌**
-
-![Profile Views](https://komarev.com/ghpvc/?username=dhikaagh&color=6366F1&style=flat-square&label=Profile+Views)
-
-</div>
+[LinkedIn](https://www.linkedin.com/in/dhika-fatturrahman-ghany-5b8b33318) · [Email](mailto:dhikagh12@gmail.com)

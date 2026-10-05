@@ -1,6 +1,6 @@
 # Professional GitHub Profile Refresh
 
-Status: planning approved by Dhika. Positioning, English copy, selected work, showcase permission, and visual direction are confirmed. Implementation has not been authorized.
+Status: implemented according to the approved plan. Dhika authorized implementation, commit, and push. Automated checks and static rendering checks pass; browser-animation verification limitations are recorded below.
 
 Use [CONTEXT.md](../../CONTEXT.md) for profile terminology.
 
@@ -64,6 +64,15 @@ Approved project copy:
 - **PaymentKit:** A payment API with asynchronous processing, containerized services, and a GitHub Actions deployment workflow.
 - **Messaging Bridge:** An API for integrating Telegram, email, and WhatsApp messaging.
 
+### Contribution evidence
+
+Personal-contribution statements use public commits attributed to `dhikaagh`, not repository ownership alone:
+
+- PaymentKit: [API/worker changes](https://github.com/dhikaagh/paymentkit/commit/f2dd51ad783aaa590ed165f0778fe0f0fd6d4be3) and [deployment workflow changes](https://github.com/dhikaagh/paymentkit/commit/97f49b4d3045ec5586de96c21efa6084f5fb72c9).
+- Messaging Bridge: [API routing and OpenAPI changes](https://github.com/dhikaagh/Messaging-Bridge-/commit/22a65b56c9708bc7f269dba903cb0aa89de69c9a).
+
+Describe the specific contribution; these records do not establish sole authorship of entire projects.
+
 ### Evidence boundaries
 
 - The research reported 16 public repositories and focused primarily on main branches, with PaymentKit's deployment branch/run checked separately.
@@ -113,6 +122,24 @@ If the pipeline becomes too small on mobile, simplify it. The identity matters m
 - Verify the animation and reduced-motion behavior in the rendered image; do not assume local rendering proves GitHub behavior.
 - Check project and contact links and confirm that only public or explicitly permitted information is shown.
 
+## Implementation verification
+
+- Dependency-free profile checks: `python3 -B -m unittest discover -s tests -v` (four passing checks).
+- SVG XML parses; the image is self-contained and includes an accessible title/description and reduced-motion CSS.
+- Static SVG previews were reviewed at 1000 × 320 and 360 × 116 using the system SVG renderer. Essential identity text remains readable without animation support.
+- GitHub's Markdown API preserves the banner image embedding and renders the updated headings.
+- Both project repository links return HTTP 200. The existing LinkedIn URL is retained; its HEAD request was rejected with HTTP 405, so it was not automatically verified.
+- Main and secondary banner text exceed 4.5:1 contrast against the background.
+- Browser limitation: headless browser attempts timed out, including a minimal HTML probe in Brave. Static previews do not establish that animation or reduced-motion behavior was browser-verified; inspect those in the hosted GitHub image after publication.
+
+### Standards review
+
+No documented-standard violations, substantive heuristic smells, or concrete SVG safety/accessibility defects were reported.
+
+### Spec review
+
+The initial review identified one partial requirement: personal contributions were not stated per project. Contribution descriptions were added using the cited public commit evidence, and a regression check now protects their presence.
+
 ## Selected-work boundaries
 
 Use only public projects that Dhika is permitted to showcase and intends to keep public. Exclude freelance/client work even when its repository is temporarily public. One previously proposed client project was removed after Dhika clarified that it will become private; keep its name, links, and identifying details out of the profile plan.
@@ -129,4 +156,4 @@ No issue tracker setup, multi-session tickets, or new build pipeline is needed f
 
 ## Planning approval
 
-Dhika approved this plan, including the English copy, selected work, and visual direction. Planning approval is not implementation permission: creating the SVG banner or editing the README requires a subsequent request.
+Dhika approved this plan, including the English copy, selected work, and visual direction, and subsequently requested implementation, commit, and push. That permission covers the profile README and banner refresh; it does not cover changing other repositories' visibility.

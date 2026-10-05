@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320" role="img" aria-labelledby="banner-title banner-description">
+  <title id="banner-title">Dhika — Full-Stack Software Engineer</title>
+  <desc id="banner-description">Web applications, CI/CD, and deployment. A conceptual build, deploy, and run pipeline traces once; it does not show live service status.</desc>
+  <style>
+    svg { width: 100%; height: auto; }
+    text { font-family: Arial, Helvetica, sans-serif; }
+    .utility { font-family: "Courier New", Courier, monospace; }
+    .name { font-size: 70px; font-weight: 700; letter-spacing: -2px; }
+    .role { font-size: 38px; font-weight: 600; letter-spacing: -1px; }
+    .focus { font-size: 19px; }
+    .trace {
+      stroke-dasharray: 220;
+      stroke-dashoffset: 0;
+      animation: draw-route 2.6s ease-in-out .4s backwards;
+    }
+    @keyframes draw-route {
+      from { stroke-dashoffset: 220; }
+      to { stroke-dashoffset: 0; }
+    }
+    @media (max-width: 600px) {
+      .pipeline, .context-label { display: none; }
+      .name { font-size: 86px; }
+      .role { font-size: 48px; }
+      .focus { font-size: 24px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .trace { animation: none; }
+    }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M0 0L8 4L0 8Z" fill="#506680" />
+    </marker>
+  </defs>
+
+  <rect x="1" y="1" width="998" height="318" rx="18" fill="#0D1422" stroke="#26364C" />
+  <path d="M48 68H952" stroke="#26364C" />
+  <path d="M48 68H84" stroke="#4DC9D4" stroke-width="2" />
+  <text class="utility" x="48" y="46" font-size="15" fill="#94A3B8">dhikaagh</text>
+  <text class="utility context-label" x="952" y="46" text-anchor="end" font-size="12" letter-spacing="1" fill="#94A3B8">WEB APPLICATIONS / DELIVERY</text>
+
+  <g fill="#E6EDF3">
+    <text class="name" x="46" y="153">DHIKA</text>
+    <text class="role" x="48" y="207">Full-Stack Software Engineer</text>
+    <text class="focus" x="49" y="242" fill="#94A3B8">Web applications · CI/CD · Deployment</text>
+  </g>
+
+  <g class="pipeline">
+    <text class="utility" x="674" y="132" font-size="12" letter-spacing="1.5" fill="#94A3B8">DELIVERY PIPELINE</text>
+    <path d="M698 178H781M808 178H891" fill="none" stroke="#506680" stroke-width="1.5" marker-end="url(#arrow)" />
+    <path class="trace" d="M698 178H781M808 178H891" fill="none" stroke="#4DC9D4" stroke-width="2" />
+    <g fill="#152238" stroke="#506680" stroke-width="1.5">
+      <circle cx="686" cy="178" r="8" />
+      <circle cx="796" cy="178" r="8" />
+      <circle cx="906" cy="178" r="8" />
+    </g>
+    <g class="utility" text-anchor="middle" font-size="16" fill="#E6EDF3">
+      <text x="686" y="215">BUILD</text>
+      <text x="796" y="215">DEPLOY</text>
+      <text x="906" y="215">RUN</text>
+    </g>
+  </g>
+
+  <path d="M48 278H952" stroke="#26364C" />
+</svg>
