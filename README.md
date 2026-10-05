@@ -105,6 +105,20 @@ An API for integrating Telegram, email, and WhatsApp messaging.
   </picture>
 </p>
 
+## 🐍 Contribution Activity
+
+<details open>
+<summary>Contribution activity · hide/show</summary>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dhikaagh/dhikaagh/output/github-contribution-grid-snake-dark.svg?palette=github-dark" />
+    <img src="https://raw.githubusercontent.com/dhikaagh/dhikaagh/output/github-contribution-grid-snake.svg" width="100%" alt="Animated contribution activity graph for dhikaagh" />
+  </picture>
+</p>
+
+</details>
+
 ## Contact
 
 [LinkedIn](https://www.linkedin.com/in/dhika-fatturrahman-ghany-5b8b33318) · [Email](mailto:dhikagh12@gmail.com)

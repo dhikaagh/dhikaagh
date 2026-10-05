@@ -110,14 +110,52 @@ class ProfileTests(unittest.TestCase):
             kinds.add("streak" if "demolab" in url.netloc else url.path.rsplit("/", 1)[1])
         self.assertEqual(kinds, {"profile-details", "stats", "repos-per-language", "streak"})
 
-    def test_profile_has_no_retired_decoration_or_generator(self):
+    def test_contribution_snake_is_accessible_and_theme_aware(self):
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        self.assertIn("## 🐍 Contribution Activity", readme)
+        snake = readme.split("## 🐍 Contribution Activity", 1)[1].split("\n## ", 1)[0]
+        markup = ProfileMarkup()
+        markup.feed(snake)
+        self.assertIn("<details open>", snake)
+        self.assertEqual(len(markup.images), 1)
+        self.assertEqual(len(markup.sources), 1)
+        self.assertTrue(markup.images[0].get("alt"))
+        self.assertEqual(markup.sources[0].get("media"), "(prefers-color-scheme: dark)")
+        image_url = urlparse(markup.images[0]["src"])
+        dark_url = urlparse(markup.sources[0]["srcset"])
+        expected_prefix = "/dhikaagh/dhikaagh/output/github-contribution-grid-snake"
+        self.assertEqual(image_url.scheme, "https")
+        self.assertEqual(dark_url.scheme, "https")
+        self.assertEqual(image_url.netloc, "raw.githubusercontent.com")
+        self.assertEqual(dark_url.netloc, "raw.githubusercontent.com")
+        self.assertEqual(image_url.path, expected_prefix + ".svg")
+        self.assertEqual(dark_url.path, expected_prefix + "-dark.svg")
+        self.assertEqual(parse_qs(dark_url.query).get("palette"), ["github-dark"])
+
+    def test_snake_workflow_refreshes_own_account(self):
+        workflow = (ROOT / ".github/workflows/snake.yml").read_text(encoding="utf-8")
+        self.assertIn("github_user_name: dhikaagh", workflow)
+        self.assertIn("workflow_dispatch:", workflow)
+        self.assertRegex(workflow, r"cron:\s*[\"']0 0 \* \* \*[\"']")
+        self.assertIn("contents: write", workflow)
+        self.assertIn("target_branch: output", workflow)
+        self.assertIn("build_dir: dist", workflow)
+        outputs = workflow.split("outputs: |", 1)[1].split("\n\n", 1)[0]
+        self.assertEqual(
+            [line.strip() for line in outputs.splitlines() if line.strip()],
+            [
+                "dist/github-contribution-grid-snake.svg",
+                "dist/github-contribution-grid-snake-dark.svg?palette=github-dark",
+            ],
+        )
+        self.assertNotIn("\n  push:", workflow)
+
+    def test_profile_has_no_retired_decoration(self):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
         for retired in (
-            "readme-typing-svg", "github-contribution-grid-snake",
-            "giphy.com", "komarev.com", "Coming_Soon",
+            "readme-typing-svg", "giphy.com", "komarev.com", "Coming_Soon",
         ):
             self.assertNotIn(retired, readme)
-        self.assertFalse((ROOT / ".github/workflows/snake.yml").exists())
 
 
 if __name__ == "__main__":
