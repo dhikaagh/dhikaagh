@@ -1,13 +1,23 @@
 <details open>
 <summary>Banner animation · hide/show</summary>
 
-<img src="img/profile-banner.svg?v=2" width="100%" alt="Dhika — Full-Stack Software Engineer. A looping build, deploy, and run pipeline." />
+<img src="img/profile-banner.svg?v=4" width="100%" alt="Dhika Fatturrahman Ghany — Full-Stack Engineer · DevOps. An API client sends GET /api/me and receives a JSON profile with a 200 OK response." />
 
 </details>
 
-# Full-Stack Software Engineer
+> It's not done until it's running.
 
-I build full-stack web applications and APIs, with hands-on experience in CI/CD, VPS deployment, and server management.
+<p>
+  <a href="https://dhika.codian.my.id"><img src="https://img.shields.io/badge/Website-dhika.codian.my.id-0D1422?style=flat&amp;logo=googlechrome&amp;logoColor=4DC9D4" alt="Website: dhika.codian.my.id" /></a>
+  <a href="https://www.linkedin.com/in/dhikaagh"><img src="https://img.shields.io/badge/LinkedIn-dhikaagh-0D1422?style=flat&amp;logo=linkedin&amp;logoColor=4DC9D4" alt="LinkedIn: dhikaagh" /></a>
+  <a href="mailto:dhikagh12@gmail.com"><img src="https://img.shields.io/badge/Email-dhikagh12%40gmail.com-0D1422?style=flat&amp;logo=gmail&amp;logoColor=4DC9D4" alt="Email: dhikagh12@gmail.com" /></a>
+</p>
+
+**Open to** full-time roles (remote / hybrid) and collaboration on open-source or side projects · English, Bahasa Indonesia
+
+# Full-Stack Engineer · DevOps
+
+I build full-stack web applications and APIs, and the CI/CD pipelines that deploy them to Linux servers.
 
 Based in Cimahi, Indonesia.
 
@@ -30,12 +40,18 @@ An API for integrating Telegram, email, and WhatsApp messaging.
 
 **Stack:** TypeScript · Bun · Hono · Zod
 
-## Development & delivery
+## What I do
+
+### Full-stack
 
 - Build web applications across the frontend and backend.
-- Work with CI/CD workflows in GitHub Actions and GitLab CI/CD.
-- Deploy applications and manage server/VPS environments.
-- Use Docker for basic containerized development and deployment.
+- Design REST APIs with OpenAPI documentation and asynchronous processing with RabbitMQ.
+
+### DevOps
+
+- Build CI/CD pipelines with GitHub Actions and GitLab CI/CD.
+- Ship containerized deployments to VPS over SSH with Docker Compose, including post-deploy health checks and staging environments.
+- Manage Linux servers for the applications I deploy.
 
 ## Tech stack
 
@@ -71,7 +87,7 @@ An API for integrating Telegram, email, and WhatsApp messaging.
 <p>
   <img src="https://skillicons.dev/icons?i=githubactions" width="24" height="24" alt="" />&nbsp;GitHub Actions &emsp;
   <img src="https://skillicons.dev/icons?i=gitlab" width="24" height="24" alt="" />&nbsp;GitLab CI/CD &emsp;
-  <img src="https://skillicons.dev/icons?i=docker" width="24" height="24" alt="" />&nbsp;Docker (basics) &emsp;
+  <img src="https://skillicons.dev/icons?i=docker" width="24" height="24" alt="" />&nbsp;Docker &emsp;
   <img src="https://skillicons.dev/icons?i=linux" width="24" height="24" alt="" />&nbsp;Linux &emsp;
   <img src="https://skillicons.dev/icons?i=git" width="24" height="24" alt="" />&nbsp;Git
 </p>
@@ -119,6 +135,3 @@ An API for integrating Telegram, email, and WhatsApp messaging.
 
 </details>
 
-## Contact
-
-[LinkedIn](https://www.linkedin.com/in/dhika-fatturrahman-ghany-5b8b33318) · [Email](mailto:dhikagh12@gmail.com)

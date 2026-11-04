@@ -31,7 +31,8 @@ class ProfileMarkup(HTMLParser):
 class ProfileTests(unittest.TestCase):
     def test_profile_presents_approved_role_and_public_projects(self):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
-        self.assertIn("Full-Stack Software Engineer", readme)
+        self.assertIn("# Full-Stack Engineer · DevOps", readme)
+        self.assertNotIn("Full-Stack Software Engineer", readme)
         projects = set(re.findall(r"https://github\.com/dhikaagh/([\w.-]+)", readme))
         self.assertEqual(projects, {"paymentkit", "Messaging-Bridge-"})
 
@@ -48,7 +49,9 @@ class ProfileTests(unittest.TestCase):
         ids = {element.get("id") for element in banner.iter()}
         self.assertTrue(set(banner.attrib["aria-labelledby"].split()) <= ids)
         text = " ".join(banner.itertext())
-        self.assertIn("Full-Stack Software Engineer", text)
+        self.assertIn("Dhika Fatturrahman Ghany", text)
+        self.assertIn("Full-Stack Engineer · DevOps", text)
+        self.assertNotIn("Full-Stack Software Engineer", text)
         self.assertIn("prefers-reduced-motion: reduce", text)
         for element in banner.iter():
             self.assertNotEqual(element.tag.split("}")[-1], "script")
@@ -62,12 +65,44 @@ class ProfileTests(unittest.TestCase):
                           if element.tag.endswith("style"))
         self.assertRegex(styles, r"animation:\s*[^;{}]*\binfinite\b")
         for element in banner.iter():
-            if element.text in ("DHIKA", "Full-Stack Software Engineer"):
-                self.assertNotIn("flow-marker", element.get("class", "").split())
+            if element.text == "Dhika Fatturrahman Ghany":
+                self.assertNotIn("reveal", element.get("class", "").split(),
+                                 "Name must be visible from the first frame")
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
         self.assertIn("<details open>", readme)
         self.assertIn("<summary>Banner animation", readme)
-        self.assertIn("Full-Stack Software Engineer", readme.split("</details>", 1)[1])
+        self.assertIn("Full-Stack Engineer · DevOps", readme.split("</details>", 1)[1])
+
+    def test_banner_monogram_shows_on_every_layout(self):
+        banner = ET.parse(ROOT / "img/profile-banner.svg").getroot()
+        monograms = [e for e in banner.iter() if "monogram" in e.get("class", "").split()]
+        self.assertGreaterEqual(len(monograms), 1)
+        styles = " ".join(e.text or "" for e in banner.iter() if e.tag.endswith("style"))
+        self.assertNotRegex(styles, r"\.monogram\s*\{[^}]*display:\s*none")
+
+    def test_header_has_tagline_contacts_and_availability(self):
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        header = readme.split("</details>", 1)[1].split("\n# ", 1)[0]
+        self.assertIn("It's not done until it's running.", header)
+        for link in (
+            "https://dhika.codian.my.id",
+            "https://www.linkedin.com/in/dhikaagh",
+            "mailto:dhikagh12@gmail.com",
+        ):
+            self.assertIn(link, header)
+        self.assertIn("**Open to**", header)
+        for phrase in ("full-time", "remote", "hybrid", "collaboration", "English", "Bahasa Indonesia"):
+            self.assertIn(phrase, header)
+        self.assertNotIn("freelance", readme.lower())
+        self.assertNotIn("## Contact", readme)
+        self.assertNotIn("dhika-fatturrahman-ghany-5b8b33318", readme)
+
+    def test_devops_claims_stay_within_evidence(self):
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        self.assertIn("### Full-stack", readme)
+        self.assertIn("### DevOps", readme)
+        for unsupported in ("Kubernetes", "Terraform", "Ansible", "LLM", "Orbit"):
+            self.assertNotIn(unsupported, readme)
 
     def test_tech_stack_has_icons_and_visible_names(self):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
@@ -78,10 +113,11 @@ class ProfileTests(unittest.TestCase):
         names = (
             "React", "Next.js", "Tailwind CSS", "Node.js", "Hono", "Laravel",
             "JavaScript", "TypeScript", "PHP", "MySQL", "PostgreSQL", "RabbitMQ",
-            "GitHub Actions", "GitLab CI/CD", "Docker (basics)", "Linux", "Git",
+            "GitHub Actions", "GitLab CI/CD", "Docker", "Linux", "Git",
         )
         self.assertEqual(len(markup.images), len(names))
         visible = " ".join(markup.text)
+        self.assertNotIn("basics", visible)
         for name in names:
             self.assertIn(name, visible, "Technology names must not be only image alt text")
 

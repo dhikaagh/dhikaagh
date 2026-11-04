@@ -1,20 +1,30 @@
 # Dhika's Professional Profile
 
-The public profile presents Dhika's work to recruiters and engineering teams. Its language distinguishes the primary professional role from supporting delivery experience.
+The public profile presents Dhika's work to recruiters and engineering teams. Its language keeps the dual Full-Stack and DevOps identity tied to evidence.
 
 ## Language
 
-**Full-Stack Software Engineer**:
-Dhika's chosen professional identity for this profile, focused on web applications across the frontend and backend. CI/CD, deployment, and server management support that identity rather than replacing it with a DevOps role.
-_Avoid_: Software Engineering as a personal title
+**Full-Stack Engineer · DevOps**:
+Dhika's professional title, used verbatim in the banner and README heading. Dhika targets both kinds of role; Full-Stack leads because its evidence is strongest. DevOps claims stay within demonstrated work: GitHub Actions/GitLab CI pipelines, containerized VPS deployments over SSH with Docker Compose, post-deploy health checks, staging environments, and Linux server management. No Kubernetes, IaC, monitoring, or managed-cloud claims until there is evidence.
+_Avoid_: Full-Stack Software Engineer (previous title), "Docker (basics)", DevOps Engineer alone
 
 **DevOps tone**:
-The profile's engineering-oriented presentation of Dhika's web development and delivery experience. It does not by itself imply the professional title DevOps Engineer.
-_Avoid_: DevOps Engineer as a synonym for visual style
+The profile's engineering-oriented visual presentation (terminal and API-client styling). It is a style, separate from the title.
+_Avoid_: Treating the visual style as an additional claim
 
-**Delivery pipeline**:
-The banner's conceptual representation of building, deploying, and running web applications. It is an illustration, not a live service dashboard or a claim about a particular project's architecture.
-_Avoid_: Live infrastructure status
+**Monogram**:
+Dhika's identity mark: a rounded **D** enclosing a `>` prompt chevron, cyan D with green chevron. In the banner it is the API client's app icon beside the full name, visible on every layout.
+_Avoid_: Logo (ambiguous with technology icons)
+
+**Tagline**:
+"It's not done until it's running." Shared with Dhika's website so both profiles speak with one voice.
+
+**Open to**:
+Full-time roles (remote / hybrid) and collaboration on open-source or side projects. Languages: English first, Bahasa Indonesia. Freelance is deliberately not advertised.
+
+**API response banner**:
+The banner's illustrative API exchange: a client sends `GET /api/me` and receives a `200 OK` JSON body describing Dhika's identity. The full name sits in the static title bar so identity is readable from the first frame; the response plays once within about 1.5 seconds. The endpoint, latency, and status are decoration, not a real service or live status.
+_Avoid_: Real endpoints, live service status, performance claims
 
 **Portfolio-safe project**:
 A project Dhika is permitted to showcase and intends to keep publicly accessible. Temporary public visibility does not by itself make client work portfolio-safe.
