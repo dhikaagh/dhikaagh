@@ -1,18 +1,17 @@
 <details open>
 <summary>Banner animation · hide/show</summary>
 
-<img src="img/profile-banner.svg?v=4" width="100%" alt="Dhika Fatturrahman Ghany — Full-Stack Engineer · DevOps. An API client sends GET /api/me and receives a JSON profile with a 200 OK response." />
+<img src="img/profile-banner.svg?v=5" width="100%" alt="Dhika Fatturrahman Ghany — Full-Stack Engineer · DevOps. An API client sends GET /api/me and receives a JSON profile with a 200 OK response." />
 
 </details>
 
-> It's not done until it's running.
-
 <p>
-  <a href="https://dhika.codian.my.id"><img src="https://img.shields.io/badge/Website-dhika.codian.my.id-0D1422?style=flat&amp;logo=googlechrome&amp;logoColor=4DC9D4" alt="Website: dhika.codian.my.id" /></a>
-  <a href="https://www.linkedin.com/in/dhikaagh"><img src="https://img.shields.io/badge/LinkedIn-dhikaagh-0D1422?style=flat&amp;logo=linkedin&amp;logoColor=4DC9D4" alt="LinkedIn: dhikaagh" /></a>
-  <a href="mailto:dhikagh12@gmail.com"><img src="https://img.shields.io/badge/Email-dhikagh12%40gmail.com-0D1422?style=flat&amp;logo=gmail&amp;logoColor=4DC9D4" alt="Email: dhikagh12@gmail.com" /></a>
+  <a href="https://dhika.codian.my.id"><img src="img/contact-website.svg" width="260" height="60" alt="Website: dhika.codian.my.id" /></a>
+  <a href="https://www.linkedin.com/in/dhikaagh"><img src="img/contact-linkedin.svg" width="260" height="60" alt="LinkedIn: in/dhikaagh" /></a>
+  <a href="mailto:dhikagh12@gmail.com"><img src="img/contact-email.svg" width="260" height="60" alt="Email: dhikagh12@gmail.com" /></a>
 </p>
 
+**It's not done until it's running.**<br />
 **Open to** full-time roles (remote / hybrid) and collaboration on open-source or side projects · English, Bahasa Indonesia
 
 # Full-Stack Engineer · DevOps

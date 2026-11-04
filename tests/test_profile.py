@@ -80,6 +80,26 @@ class ProfileTests(unittest.TestCase):
         styles = " ".join(e.text or "" for e in banner.iter() if e.tag.endswith("style"))
         self.assertNotRegex(styles, r"\.monogram\s*\{[^}]*display:\s*none")
 
+    def test_banner_response_replays_in_a_loop(self):
+        banner = ET.parse(ROOT / "img/profile-banner.svg").getroot()
+        styles = " ".join(e.text or "" for e in banner.iter() if e.tag.endswith("style"))
+        for name in ("type", "reveal", "press", "spinner"):
+            rule = re.search(r"\." + name + r"\s*\{([^}]*)\}", styles)
+            self.assertIsNotNone(rule, name)
+            self.assertIn("infinite", rule.group(1), f".{name} must replay")
+
+    def test_contact_buttons_are_local_accessible_svgs(self):
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        header = readme.split("</details>", 1)[1].split("\n# ", 1)[0]
+        for kind in ("website", "linkedin", "email"):
+            path = f"img/contact-{kind}.svg"
+            self.assertIn(f'src="{path}"', header)
+            svg = ET.parse(ROOT / path).getroot()
+            self.assertEqual(svg.get("role"), "img")
+            ids = {e.get("id") for e in svg.iter()}
+            self.assertTrue(set(svg.attrib["aria-labelledby"].split()) <= ids)
+        self.assertNotIn("img.shields.io", readme)
+
     def test_header_has_tagline_contacts_and_availability(self):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
         header = readme.split("</details>", 1)[1].split("\n# ", 1)[0]

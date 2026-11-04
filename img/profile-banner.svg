@@ -7,16 +7,28 @@
     .json { font-size: 20px; }
     .k { fill: #7DD3FC; } .s { fill: #7EE787; } .p { fill: #94A3B8; }
     .mobile { display: none; }
-    .type { animation: type steps(7) 0.3s 0.15s both; }
-    .reveal { animation: reveal 0.25s ease-out both; }
-    .press { animation: press 0.25s ease-out 0.45s both; }
-    .spinner { transform-box: fill-box; transform-origin: center; animation: spin 0.3s linear 0.5s, vanish 0.01s 0.8s both; opacity: 0; }
+    /* One 9s request cycle, replayed forever: type URL, send, respond, hold, clear. */
+    .type { animation: type 9s 0.15s infinite both; }
+    .reveal { animation: reveal 9s ease-out infinite both; }
+    .press { animation: press 9s ease-out 0.45s infinite both; }
+    .spinner { transform-box: fill-box; transform-origin: center; animation: spin 9s linear 0.5s infinite both; opacity: 0; }
     .live { animation: blink 1.6s ease-in-out 2s infinite; }
-    @keyframes type { to { transform: translateX(75.6px); } }
-    @keyframes reveal { from { opacity: 0; transform: translateX(-6px); } to { opacity: 1; transform: none; } }
-    @keyframes press { 0% { fill: #4DC9D4; } 50% { fill: #A5F3FC; } 100% { fill: #4DC9D4; } }
-    @keyframes spin { from { opacity: 1; transform: rotate(0); } to { opacity: 1; transform: rotate(360deg); } }
-    @keyframes vanish { to { opacity: 0; } }
+    @keyframes type {
+      0% { transform: none; animation-timing-function: steps(7, end); }
+      3.3%, 89% { transform: translateX(75.6px); animation-timing-function: ease-in; }
+      92%, 100% { transform: none; }
+    }
+    @keyframes reveal {
+      0% { opacity: 0; transform: translateX(-6px); }
+      2.8%, 80% { opacity: 1; transform: none; }
+      84%, 100% { opacity: 0; transform: none; }
+    }
+    @keyframes press { 0%, 2.8%, 100% { fill: #4DC9D4; } 1.4% { fill: #A5F3FC; } }
+    @keyframes spin {
+      0% { opacity: 1; transform: rotate(0); }
+      3.3% { opacity: 1; transform: rotate(360deg); }
+      3.4%, 100% { opacity: 0; }
+    }
     @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: .3; } }
     @media (max-width: 600px) {
       .desktop { display: none; }
