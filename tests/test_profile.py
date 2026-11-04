@@ -39,6 +39,15 @@ class ProfileTests(unittest.TestCase):
     def test_selected_work_includes_personal_contributions(self):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
         self.assertEqual(readme.count("**My contribution:**"), 2)
+        work = readme.split("## 🚀 Selected work", 1)[1].split("\n## ", 1)[0]
+        self.assertNotIn("`", work, "Stack chips should be badges, not code spans")
+        markup = ProfileMarkup()
+        markup.feed(work)
+        self.assertEqual(
+            [image.get("alt") for image in markup.images],
+            ["TypeScript", "Hono", "RabbitMQ", "MySQL", "Docker", "GitHub Actions",
+             "TypeScript", "Bun", "Hono", "Zod"],
+        )
 
     def test_banner_is_accessible_and_self_contained(self):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
