@@ -5,7 +5,7 @@ The public profile presents Dhika's work to recruiters and engineering teams. It
 ## Language
 
 **Full-Stack Engineer · DevOps**:
-Dhika's professional title, used verbatim in the banner and README heading. Dhika targets both kinds of role; Full-Stack leads because its evidence is strongest. DevOps claims stay within demonstrated work: GitHub Actions/GitLab CI pipelines, containerized VPS deployments over SSH with Docker Compose, post-deploy health checks, staging environments, and Linux server management. No Kubernetes, IaC, monitoring, or managed-cloud claims until there is evidence.
+Dhika's professional title, used verbatim in the banner and the README lead line. Dhika targets both kinds of role; Full-Stack leads because its evidence is strongest. DevOps claims stay within demonstrated work: GitHub Actions/GitLab CI pipelines, containerized VPS deployments over SSH with Docker Compose, post-deploy health checks, staging environments, and Linux server management. No Kubernetes, IaC, monitoring, or managed-cloud claims until there is evidence.
 _Avoid_: Full-Stack Software Engineer (previous title), "Docker (basics)", DevOps Engineer alone
 
 **DevOps tone**:

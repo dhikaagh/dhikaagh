@@ -31,7 +31,7 @@ class ProfileMarkup(HTMLParser):
 class ProfileTests(unittest.TestCase):
     def test_profile_presents_approved_role_and_public_projects(self):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
-        self.assertIn("# Full-Stack Engineer · DevOps", readme)
+        self.assertIn("<b>Full-Stack Engineer · DevOps</b>", readme)
         self.assertNotIn("Full-Stack Software Engineer", readme)
         projects = set(re.findall(r"https://github\.com/dhikaagh/([\w.-]+)", readme))
         self.assertEqual(projects, {"paymentkit", "Messaging-Bridge-"})
@@ -90,7 +90,7 @@ class ProfileTests(unittest.TestCase):
 
     def test_contact_buttons_are_local_accessible_svgs(self):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
-        header = readme.split("</details>", 1)[1].split("\n# ", 1)[0]
+        header = readme.split("</details>", 1)[1].split("\n## ", 1)[0]
         for kind in ("website", "linkedin", "email"):
             path = f"img/contact-{kind}.svg"
             self.assertIn(f'src="{path}"', header)
@@ -98,11 +98,11 @@ class ProfileTests(unittest.TestCase):
             self.assertEqual(svg.get("role"), "img")
             ids = {e.get("id") for e in svg.iter()}
             self.assertTrue(set(svg.attrib["aria-labelledby"].split()) <= ids)
-        self.assertNotIn("img.shields.io", readme)
+        self.assertNotIn("img.shields.io", header)
 
     def test_header_has_tagline_contacts_and_availability(self):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
-        header = readme.split("</details>", 1)[1].split("\n# ", 1)[0]
+        header = readme.split("</details>", 1)[1].split("\n## ", 1)[0]
         self.assertIn("It's not done until it's running.", header)
         for link in (
             "https://dhika.codian.my.id",
@@ -110,7 +110,7 @@ class ProfileTests(unittest.TestCase):
             "mailto:dhikagh12@gmail.com",
         ):
             self.assertIn(link, header)
-        self.assertIn("**Open to**", header)
+        self.assertIn("<b>Open to</b>", header)
         for phrase in ("full-time", "remote", "hybrid", "collaboration", "English", "Bahasa Indonesia"):
             self.assertIn(phrase, header)
         self.assertNotIn("freelance", readme.lower())
@@ -119,27 +119,26 @@ class ProfileTests(unittest.TestCase):
 
     def test_devops_claims_stay_within_evidence(self):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
-        self.assertIn("### Full-stack", readme)
-        self.assertIn("### DevOps", readme)
+        self.assertIn("| **Full&#8209;stack** |", readme)
+        self.assertIn("| **DevOps** |", readme)
         for unsupported in ("Kubernetes", "Terraform", "Ansible", "LLM", "Orbit"):
             self.assertNotIn(unsupported, readme)
 
-    def test_tech_stack_has_icons_and_visible_names(self):
+    def test_tech_stack_badges_are_named(self):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
-        self.assertIn("## Tech stack", readme)
-        stack = readme.split("## Tech stack", 1)[1].split("\n## ", 1)[0]
+        self.assertIn("## 🛠️ Tech stack", readme)
+        stack = readme.split("## 🛠️ Tech stack", 1)[1].split("\n## ", 1)[0]
         markup = ProfileMarkup()
         markup.feed(stack)
         names = (
-            "React", "Next.js", "Tailwind CSS", "Node.js", "Hono", "Laravel",
-            "JavaScript", "TypeScript", "PHP", "MySQL", "PostgreSQL", "RabbitMQ",
+            "TypeScript", "JavaScript", "PHP", "React", "Next.js", "Tailwind CSS",
+            "Node.js", "Hono", "Laravel", "MySQL", "PostgreSQL", "RabbitMQ",
             "GitHub Actions", "GitLab CI/CD", "Docker", "Linux", "Git",
         )
-        self.assertEqual(len(markup.images), len(names))
-        visible = " ".join(markup.text)
-        self.assertNotIn("basics", visible)
-        for name in names:
-            self.assertIn(name, visible, "Technology names must not be only image alt text")
+        self.assertEqual([image.get("alt") for image in markup.images], list(names))
+        for image in markup.images:
+            self.assertTrue(image["src"].startswith("https://img.shields.io/badge/"))
+        self.assertNotIn("basics", stack)
 
     def test_four_stats_cards_use_own_account_and_theme_variants(self):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")

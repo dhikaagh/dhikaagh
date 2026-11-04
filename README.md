@@ -5,91 +5,48 @@
 
 </details>
 
-<p>
+<p align="center">
   <a href="https://dhika.codian.my.id"><img src="img/contact-website.svg" width="260" height="60" alt="Website: dhika.codian.my.id" /></a>
   <a href="https://www.linkedin.com/in/dhikaagh"><img src="img/contact-linkedin.svg" width="260" height="60" alt="LinkedIn: in/dhikaagh" /></a>
   <a href="mailto:dhikagh12@gmail.com"><img src="img/contact-email.svg" width="260" height="60" alt="Email: dhikagh12@gmail.com" /></a>
 </p>
 
-**It's not done until it's running.**<br />
-**Open to** full-time roles (remote / hybrid) and collaboration on open-source or side projects · English, Bahasa Indonesia
-
-# Full-Stack Engineer · DevOps
-
-I build full-stack web applications and APIs, and the CI/CD pipelines that deploy them to Linux servers.
-
-Based in Cimahi, Indonesia.
-
-## Selected work
-
-### [PaymentKit](https://github.com/dhikaagh/paymentkit)
-
-A payment API with asynchronous processing, containerized services, and a GitHub Actions deployment workflow.
-
-**My contribution:** API/worker development and the GitHub Actions deployment workflow.
-
-- **Stack:** TypeScript · Node.js · Hono · RabbitMQ · MySQL
-- **Delivery:** Docker · GitHub Actions · VPS deployment
-
-### [Messaging Bridge](https://github.com/dhikaagh/Messaging-Bridge-)
-
-An API for integrating Telegram, email, and WhatsApp messaging.
-
-**My contribution:** API routing and OpenAPI documentation.
-
-**Stack:** TypeScript · Bun · Hono · Zod
-
-## What I do
-
-### Full-stack
-
-- Build web applications across the frontend and backend.
-- Design REST APIs with OpenAPI documentation and asynchronous processing with RabbitMQ.
-
-### DevOps
-
-- Build CI/CD pipelines with GitHub Actions and GitLab CI/CD.
-- Ship containerized deployments to VPS over SSH with Docker Compose, including post-deploy health checks and staging environments.
-- Manage Linux servers for the applications I deploy.
-
-## Tech stack
-
-### Frontend
-
-<p>
-  <img src="https://skillicons.dev/icons?i=react" width="24" height="24" alt="" />&nbsp;React &emsp;
-  <img src="https://skillicons.dev/icons?i=nextjs" width="24" height="24" alt="" />&nbsp;Next.js &emsp;
-  <img src="https://skillicons.dev/icons?i=tailwind" width="24" height="24" alt="" />&nbsp;Tailwind CSS
+<p align="center">
+  <i>It's not done until it's running.</i>
 </p>
 
-### Backend
-
-<p>
-  <img src="https://skillicons.dev/icons?i=nodejs" width="24" height="24" alt="" />&nbsp;Node.js &emsp;
-  <img src="https://hono.dev/images/logo.png" width="24" height="24" alt="" />&nbsp;Hono &emsp;
-  <img src="https://skillicons.dev/icons?i=laravel" width="24" height="24" alt="" />&nbsp;Laravel
+<p align="center">
+  <b>Full-Stack Engineer · DevOps</b> — I build full-stack web applications and APIs, with a focus on payment and messaging integrations, and the CI/CD pipelines that deploy them to Linux servers.
 </p>
 
-### Languages & data
-
-<p>
-  <img src="https://skillicons.dev/icons?i=js" width="24" height="24" alt="" />&nbsp;JavaScript &emsp;
-  <img src="https://skillicons.dev/icons?i=ts" width="24" height="24" alt="" />&nbsp;TypeScript &emsp;
-  <img src="https://skillicons.dev/icons?i=php" width="24" height="24" alt="" />&nbsp;PHP &emsp;
-  <img src="https://skillicons.dev/icons?i=mysql" width="24" height="24" alt="" />&nbsp;MySQL &emsp;
-  <img src="https://skillicons.dev/icons?i=postgres" width="24" height="24" alt="" />&nbsp;PostgreSQL &emsp;
-  <img src="https://skillicons.dev/icons?i=rabbitmq" width="24" height="24" alt="" />&nbsp;RabbitMQ
+<p align="center">
+  <b>Open to</b> full-time roles · remote / hybrid · open-source &amp; side-project collaboration<br />
+  <b>Based in</b> Cimahi, Indonesia · <b>Speaks</b> English, Bahasa Indonesia
 </p>
 
-### Delivery & tools
+## 🚀 Selected work
 
-<p>
-  <img src="https://skillicons.dev/icons?i=githubactions" width="24" height="24" alt="" />&nbsp;GitHub Actions &emsp;
-  <img src="https://skillicons.dev/icons?i=gitlab" width="24" height="24" alt="" />&nbsp;GitLab CI/CD &emsp;
-  <img src="https://skillicons.dev/icons?i=docker" width="24" height="24" alt="" />&nbsp;Docker &emsp;
-  <img src="https://skillicons.dev/icons?i=linux" width="24" height="24" alt="" />&nbsp;Linux &emsp;
-  <img src="https://skillicons.dev/icons?i=git" width="24" height="24" alt="" />&nbsp;Git
-</p>
+| Project | What it is |
+|:---|:---|
+| **[PaymentKit](https://github.com/dhikaagh/paymentkit)** | A payment API with asynchronous processing, containerized services, and a GitHub Actions deployment workflow.<br />**My contribution:** API/worker development and the GitHub Actions deployment workflow.<br />`TypeScript` `Hono` `RabbitMQ` `MySQL` `Docker` `Actions` |
+| **[Messaging Bridge](https://github.com/dhikaagh/Messaging-Bridge-)** | An API for integrating Telegram, email, and WhatsApp messaging.<br />**My contribution:** API routing and OpenAPI documentation.<br />`TypeScript` `Bun` `Hono` `Zod` |
+
+## 🧭 What I do
+
+| Area | Work |
+|:---|:---|
+| **Full&#8209;stack** | Build web applications across the frontend and backend.<br />Design REST APIs with OpenAPI documentation and asynchronous processing with RabbitMQ. |
+| **DevOps** | Build CI/CD pipelines with GitHub Actions and GitLab CI/CD.<br />Ship containerized deployments to VPS over SSH with Docker Compose, with post-deploy health checks and staging environments.<br />Manage Linux servers for the applications I deploy. |
+
+## 🛠️ Tech stack
+
+| Category | Technologies |
+|:---|:---|
+| **Languages** | <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&amp;logo=typescript&amp;logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&amp;logo=javascript&amp;logoColor=black" alt="JavaScript" /> <img src="https://img.shields.io/badge/PHP-777BB4?style=flat&amp;logo=php&amp;logoColor=white" alt="PHP" /> |
+| **Frontend** | <img src="https://img.shields.io/badge/React-20232A?style=flat&amp;logo=react&amp;logoColor=61DAFB" alt="React" /> <img src="https://img.shields.io/badge/Next.js-000000?style=flat&amp;logo=nextdotjs&amp;logoColor=white" alt="Next.js" /> <img src="https://img.shields.io/badge/Tailwind%20CSS-0F172A?style=flat&amp;logo=tailwindcss&amp;logoColor=38BDF8" alt="Tailwind CSS" /> |
+| **Backend** | <img src="https://img.shields.io/badge/Node.js-339933?style=flat&amp;logo=nodedotjs&amp;logoColor=white" alt="Node.js" /> <img src="https://img.shields.io/badge/Hono-E36002?style=flat&amp;logo=hono&amp;logoColor=white" alt="Hono" /> <img src="https://img.shields.io/badge/Laravel-FF2D20?style=flat&amp;logo=laravel&amp;logoColor=white" alt="Laravel" /> |
+| **Data & messaging** | <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&amp;logo=mysql&amp;logoColor=white" alt="MySQL" /> <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&amp;logo=postgresql&amp;logoColor=white" alt="PostgreSQL" /> <img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=flat&amp;logo=rabbitmq&amp;logoColor=white" alt="RabbitMQ" /> |
+| **DevOps & tools** | <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat&amp;logo=githubactions&amp;logoColor=white" alt="GitHub Actions" /> <img src="https://img.shields.io/badge/GitLab%20CI/CD-FC6D26?style=flat&amp;logo=gitlab&amp;logoColor=white" alt="GitLab CI/CD" /> <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&amp;logo=docker&amp;logoColor=white" alt="Docker" /> <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&amp;logo=linux&amp;logoColor=black" alt="Linux" /> <img src="https://img.shields.io/badge/Git-F05032?style=flat&amp;logo=git&amp;logoColor=white" alt="Git" /> |
 
 ## 📊 GitHub Stats
 
